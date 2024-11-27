@@ -13,7 +13,7 @@ Each evaluation can be done by calling the necessary function, just like in the 
 Here is an example:
 - base_simple_pandas_queries("datasets_thesios_io_traces/dataset-200k.csv", "results_simple_queries_csv/results_pandas_plain_simple_200k.txt")
 
-## Requirements for working with the libraries
+## Requirements
 
 1. Create and activate a virtual environment. Using a virtual environment prevents package conflicts with other projects.
    
@@ -34,6 +34,20 @@ NOTES:
 If you intend to use cudf, dask-cudf, and rmm, ensure that a compatible version of CUDA is installed on your system. Check the official documentation for compatibility.
 - Ray
 If installing on macOS/Linux, additional setup for Ray may be required (e.g., installing ray[default] or setting up environment variables).
+
+
+## Dataset use
+
+- Download datasets from the following links
+
+1. datasets-csv.zip - https://drive.google.com/file/d/1jIb7zm_rwFCopfflJz-XY7j-EAJXuO8U/view?usp=sharing
+2. datasets-parquet.zip - https://drive.google.com/file/d/1qg2pWnxGR_bZGmue-cxiLD-nI7Wdk4On/view?usp=sharing
+
+- Extract the datasets-csv.zip in order to run the experiments.
+- If the user is interested in exploring the results by using parquet files, extract datasets-parquet.zip
+
+The user must ensure that the path to the data files is changed according to where they keep the extracted files and how they named them. Similarly, based on where the user wants to store the logged results, they have to create the necessary files and folders.
+
 
 
 > **Note**
