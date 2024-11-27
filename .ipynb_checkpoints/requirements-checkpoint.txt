@@ -1,0 +1,12 @@
+dask
+numpy
+pandas
+pyarrow
+numba
+cython
+matplotlib
+cudf
+dask-cudf
+rmm
+ray
+polars
